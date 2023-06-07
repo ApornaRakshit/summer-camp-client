@@ -1,0 +1,98 @@
+[
+    {
+        "_id": "645641564787sdfv465x80",
+        "name":"Eneida Larti",
+        "designation": "Founder & Lead Piano Instructor",
+        "image": "https://i.ibb.co/FX8Snv4/piano.jpg",
+        "instrumentName": "piano",
+        "category": "popular",
+        "noOfStudent": "120",
+        "fees": "30"
+
+    },
+    {
+        "_id": "645641564787sdfv465x80",
+        "name":"Edda Larti",
+        "designation": "Lead Piano Instructor",
+        "image": "https://i.ibb.co/FX8Snv4/piano.jpg",
+        "instrumentName": "piano",
+        "noOfStudent": "105",
+        "fees": "18"
+
+    },
+    {
+        "_id": "645641564787sdfv465x89",
+        "name":"Sam Welsh",
+        "designation": "Founder & Lead Flute Instructor",
+        "image": "https://i.ibb.co/4ghvWMT/flute.jpg",
+        "instrumentName": "flute",
+        "category": "popular",
+        "noOfStudent": "100",
+        "fees": "25"
+
+    },
+    {
+        "_id": "645641564787sdfv465x8t",
+        "name":"Catheryne Shuman",
+        "designation": "Founder & Lead Guitar Instructor",
+        "image": "https://i.ibb.co/6n8J00K/guitar.jpg",
+        "instrumentName": "guitar",
+        "category": "popular",
+        "noOfStudent": "150",
+        "fees": "15"
+
+    },
+    {
+        "_id": "645641564787sdfv465x8t",
+        "name":"Catheryne Shuman",
+        "designation": "Lead Guitar Instructor",
+        "image": "https://i.ibb.co/6n8J00K/guitar.jpg",
+        "instrumentName": "guitar",
+        "noOfStudent": "130",
+        "fees": "12"
+
+    },
+    {
+        "_id": "645641564787sdfv465x8c",
+        "name":"Chloe Schans",
+        "designation": "Founder & Lead Harmonium Instructor",
+        "image": "https://i.ibb.co/p2qHn63/harmonium.jpg",
+        "instrumentName": "Harmonium",
+        "category": "popular",
+        "noOfStudent": "300",
+        "fees": "12"
+
+    },
+    {
+        "_id": "645641564787sdfv465x8a",
+        "name":"Erik Correll",
+        "designation": "Founder & Lead Ukulele Instructor",
+        "image": "https://i.ibb.co/crRT5jv/ukulele.jpg",
+        "instrumentName": "ukulele",
+        "category": "popular",
+        "noOfStudent": "220",
+        "fees": "18"
+
+    },
+    {
+        "_id": "645641564787sdfv465x8w",
+        "name":"Sarah Broadwell",
+        "designation": "Founder & Lead Violin Instructor",
+        "image": "https://i.ibb.co/PMZJ83r/violen.jpg",
+        "instrumentName": "violin",
+        "category": "popular",
+        "noOfStudent": "140",
+        "fees": "28"
+
+    },
+    {
+        "_id": "645641564787sdfv465x8w",
+        "name":"Subah Broad",
+        "designation": "Lead Violin Instructor",
+        "image": "https://i.ibb.co/PMZJ83r/violen.jpg",
+        "instrumentName": "violin",
+        "noOfStudent": "100",
+        "fees": "14"
+
+    }
+]

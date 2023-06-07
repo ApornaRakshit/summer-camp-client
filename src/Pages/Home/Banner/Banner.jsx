@@ -7,7 +7,12 @@ import bannerImg3 from '../../../assets/banner/banner3.jpg'
 
 const Banner = () => {
     return (
-        <Carousel>
+        <div>
+            <div className=" text-white bg-black text-center p-3">
+                <h4>Call Today for a Free Lesson</h4>
+                <p>357-123-9510</p>
+            </div>
+            <Carousel>
                 <div>
                     <img src={bannerImg1} />
                     <p className="legend">Music is the shorthand of emotion.<br/>Leo Tolstoy</p>
@@ -20,7 +25,11 @@ const Banner = () => {
                     <img src={bannerImg3} />
                     <p className="legend">"Music is the language of the spirit. It opens the secret of life bringing peace, abolishing strife."<br/>Kahlil Gibran</p>
                 </div>
+                
             </Carousel>
+            
+        </div>
+            
     );
 };
 
