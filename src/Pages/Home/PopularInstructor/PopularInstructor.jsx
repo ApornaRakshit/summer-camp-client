@@ -16,7 +16,7 @@ const PopularInstructor = () => {
         <section>
             <SectionTitle
                 heading={"Popular Instructors"}
-                subHeading={"From no of Students."}
+                subHeading={"(From no of Students.)"}
             ></SectionTitle>
             <div className='grid md:grid-cols-3 gap-4'>
             {

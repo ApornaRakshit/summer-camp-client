@@ -16,7 +16,7 @@ const PopularClass = () => {
         <section>
             <SectionTitle
             heading="Popular Classes."
-            subHeading="From no. of students"
+            subHeading="(From no. of students)"
             
             ></SectionTitle>
             <div className='grid md:grid-cols-2 gap-4'>

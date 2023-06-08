@@ -5,8 +5,8 @@ const Instructor = ({item}) => {
     return (
        
             <section>
-            <div className='mx-auto px-24 gap-3'>
-            <img className='w-[100px] h-[100px]' src={image} alt="" />
+            <div className='mx-auto px-24 gap-3 justify-center items-center text-center'>
+            <img className='w-[100px] h-[100px] mx-auto' src={image} alt="" />
             <div>
                 <h3 className='uppercase text-orange-500'>{name}</h3>
                 <p className='gap-2'>{instrumentName}</p>
