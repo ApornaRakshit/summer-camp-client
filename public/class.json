@@ -1,11 +1,12 @@
 [
     {
         "_id": "645641564787sdfv465x80",
-        "name":"Eneida Larti",
+        "name":"Eneida Lar",
         "designation": "Founder & Lead Piano Instructor",
         "image": "https://i.ibb.co/FX8Snv4/piano.jpg",
-        "instrumentName": "piano",
+        "instrumentName": "Piano",
         "category": "popular",
+        "description": "Eneida Lar enjoys a varied career as a performer, educator, and chamber musician",
         "noOfStudent": "120",
         "fees": "30"
 
@@ -15,7 +16,7 @@
         "name":"Edda Larti",
         "designation": "Lead Piano Instructor",
         "image": "https://i.ibb.co/FX8Snv4/piano.jpg",
-        "instrumentName": "piano",
+        "instrumentName": "Piano",
         "noOfStudent": "105",
         "fees": "18"
 
@@ -25,72 +26,77 @@
         "name":"Sam Welsh",
         "designation": "Founder & Lead Flute Instructor",
         "image": "https://i.ibb.co/4ghvWMT/flute.jpg",
-        "instrumentName": "flute",
+        "instrumentName": "Flute",
         "category": "popular",
+        "description":"Sam Welsh enjoys a varied career as a performer, educator, and chamber musician",
         "noOfStudent": "100",
         "fees": "25"
 
     },
     {
         "_id": "645641564787sdfv465x8t",
-        "name":"Catheryne Shuman",
+        "name":"Cather Sh",
         "designation": "Founder & Lead Guitar Instructor",
         "image": "https://i.ibb.co/6n8J00K/guitar.jpg",
-        "instrumentName": "guitar",
+        "instrumentName": "Guitar",
         "category": "popular",
+        "description":"Cather Sh enjoys a varied career as a performer, educator, and chamber musician",
         "noOfStudent": "150",
         "fees": "15"
 
     },
     {
         "_id": "645641564787sdfv465x8t",
-        "name":"Catheryne Shuman",
+        "name":"Cather Sh",
         "designation": "Lead Guitar Instructor",
         "image": "https://i.ibb.co/6n8J00K/guitar.jpg",
-        "instrumentName": "guitar",
+        "instrumentName": "Guitar",
         "noOfStudent": "130",
         "fees": "12"
 
     },
     {
         "_id": "645641564787sdfv465x8c",
-        "name":"Chloe Schans",
+        "name":"Chloe Sch",
         "designation": "Founder & Lead Harmonium Instructor",
         "image": "https://i.ibb.co/p2qHn63/harmonium.jpg",
         "instrumentName": "Harmonium",
         "category": "popular",
+        "description":"Chloe Sch enjoys a varied career as a performer, educator, and chamber musician",
         "noOfStudent": "300",
         "fees": "12"
 
     },
     {
         "_id": "645641564787sdfv465x8a",
-        "name":"Erik Correll",
+        "name":"Erik Corr",
         "designation": "Founder & Lead Ukulele Instructor",
         "image": "https://i.ibb.co/crRT5jv/ukulele.jpg",
-        "instrumentName": "ukulele",
+        "instrumentName": "Ukulele",
         "category": "popular",
+        "description":"Erik Corr enjoys a varied career as a performer, educator, and chamber musician",
         "noOfStudent": "220",
         "fees": "18"
 
     },
     {
         "_id": "645641564787sdfv465x8w",
-        "name":"Sarah Broadwell",
+        "name":"Sarah Bro",
         "designation": "Founder & Lead Violin Instructor",
         "image": "https://i.ibb.co/PMZJ83r/violen.jpg",
-        "instrumentName": "violin",
+        "instrumentName": "Violin",
         "category": "popular",
+        "description":"Sarah Bro enjoys a varied career as a performer, educator, and chamber musician",
         "noOfStudent": "140",
         "fees": "28"
 
     },
     {
         "_id": "645641564787sdfv465x8w",
-        "name":"Subah Broad",
+        "name":"Su Broad",
         "designation": "Lead Violin Instructor",
         "image": "https://i.ibb.co/PMZJ83r/violen.jpg",
-        "instrumentName": "violin",
+        "instrumentName": "Violin",
         "noOfStudent": "100",
         "fees": "14"
 
