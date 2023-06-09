@@ -9,6 +9,8 @@ import SeeClasses from "../Pages/Home/SeeClasses/SeeClasses";
 import Classes from "../Pages/Classes/Classes/Classes";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
+import PrivateRoutes from "./PrivateRoutes";
+import Secret from "../Pages/Shared/Secret/Secret";
 
   export const router = createBrowserRouter([
     {
@@ -38,6 +40,10 @@ import Register from "../Pages/Register/Register";
         {
           path: 'register',
           element:<Register></Register>
+        },
+        {
+          path: 'secret',
+          element: <PrivateRoutes><Secret></Secret></PrivateRoutes>
         }
       ]
     },
