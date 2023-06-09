@@ -1,6 +1,13 @@
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
+import { AuthContext } from '../../providers/AuthProvider';
+import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
+import Swal from 'sweetalert2';
+
 
 const Login = () => {
+const {signIn} =useContext(AuthContext)
+
 
     useEffect(()=>{
       
@@ -11,11 +18,26 @@ const Login = () => {
       const form = event.target;
       const email = form.email.value;
       const password = form.password.value;
-      console.log(email,password);        
-
+      console.log(email,password);
+      signIn(email,password)        
+      .then (result =>{
+        const user = result.user;
+        console.log(user)
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'User login successful',
+            showConfirmButton: false,
+            timer: 1500
+          })
+      })
     }
     return (
+        
         <div>
+            <Helmet>
+                <title>Summer Camp | Login</title>
+            </Helmet>
             <div className="hero min-h-screen  bg-base-200">
                 <div className="hero-content flex-col md:flex-row">
                     <div className="text-center lg:text-left">
@@ -43,6 +65,7 @@ const Login = () => {
                                 <input className="btn btn-primary" type="submit" value="Login" />
                             </div>
                         </form>
+                        <p className='mx-auto py-2'><small>Don't have any account!<Link to="/register" className='text-blue-500'>Please,register!</Link></small></p>
                     </div>
                 </div>
             </div>
