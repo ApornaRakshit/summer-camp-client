@@ -11,7 +11,7 @@ const useClass = () => {
                 setLoading(false)
             })
     }, []) 
-    return[classes, loading]
+    return[classes,loading ]
 };
 
 export default useClass;

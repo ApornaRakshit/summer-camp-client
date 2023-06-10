@@ -11,7 +11,7 @@
         "category2":"class",
         "description": "Eneida Lar enjoys a varied career as a performer, educator, and chamber musician",
         "noOfStudent": "120",
-        "fees": "30",
+        "fees": 30,
         "classNo":"3",
         "email": "eneida@gmail.com"
 
@@ -27,7 +27,7 @@
         "instrumentName": "Piano",
         "description":"Edda Larti enjoys a varied career as a performer, educator, and chamber musician",
         "noOfStudent": "105",
-        "fees": "18",
+        "fees": 18,
         "classNo":"4",
         "email": "edda@gmail.com"
 
@@ -45,7 +45,7 @@
         "category2":"class",
         "description":"Sam Welsh enjoys a varied career as a performer, educator, and chamber musician",
         "noOfStudent": "100",
-        "fees": "25",
+        "fees": 25,
         "classNo":"2",
         "email": "sam@gmail.com"
 
@@ -62,7 +62,7 @@
         "category2":"class",
         "description":"Cather Sh enjoys a varied career as a performer, educator, and chamber musician",
         "noOfStudent": "150",
-        "fees": "15",
+        "fees": 15,
         "classNo":"2",
         "email": "cather@gmail.com"
 
@@ -78,7 +78,7 @@
         "description":"Cether Sh enjoys a varied career as a performer, educator, and chamber musician",
         "noOfStudent": "130",
         "category2":"class",
-        "fees": "12",
+        "fees": 12,
         "classNo":"5",
         "email": "cether@gmail.com"
 
@@ -95,7 +95,7 @@
         "description":"Chloe Sch enjoys a varied career as a performer, educator, and chamber musician",
         "noOfStudent": "300",
         "category2":"class",
-        "fees": "12",
+        "fees": 12,
         "classNo":"2",
         "email": "chloe@gmail.com"
 
@@ -112,7 +112,7 @@
         "description":"Erik Corr enjoys a varied career as a performer, educator, and chamber musician",
         "noOfStudent": "220",
         "category2":"class",
-        "fees": "18",
+        "fees": 18,
         "classNo":"3",
         "email": "erik@gmail.com"
 
@@ -129,7 +129,7 @@
         "description":"Sarah Bro enjoys a varied career as a performer, educator, and chamber musician",
         "noOfStudent": "140",
         "category2":"class",
-        "fees": "28",
+        "fees": 28,
         "classNo":"2",
         "email": "sarah@gmail.com"
 
@@ -145,7 +145,7 @@
         "instrumentName": "Violin",
         "category2":"class",
         "noOfStudent": "100",
-        "fees": "14",
+        "fees": 14,
         "classNo":"3",
         "email": "su@gmail.com"
 

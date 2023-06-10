@@ -11,6 +11,8 @@ import Register from "../Pages/Register/Register";
 import PrivateRoutes from "./PrivateRoutes";
 import Secret from "../Pages/Shared/Secret/Secret";
 import InsBio from "../Pages/Instructors/InsBio/InsBio";
+import Dashboard from "../Layout/Dashboard";
+import MyCart from "../Pages/Dashboard/MyCart/MyCart";
 
   export const router = createBrowserRouter([
     {
@@ -47,4 +49,14 @@ import InsBio from "../Pages/Instructors/InsBio/InsBio";
         }
       ]
     },
+    {
+      path: 'dashboard',
+      element: <Dashboard></Dashboard>,
+      children:[
+        {
+          path: 'mycart',
+          element: <MyCart></MyCart>
+        }
+      ]
+    }
   ]);
