@@ -11,7 +11,8 @@
         "description": "Eneida Lar enjoys a varied career as a performer, educator, and chamber musician",
         "noOfStudent": "120",
         "fees": "30",
-        "classNo":"3"
+        "classNo":"3",
+        "email": "eneida@gmail.com"
 
     },
     {
@@ -25,7 +26,8 @@
         "description":"Edda Larti enjoys a varied career as a performer, educator, and chamber musician",
         "noOfStudent": "105",
         "fees": "18",
-        "classNo":"4"
+        "classNo":"4",
+        "email": "edda@gmail.com"
 
     },
     {
@@ -41,7 +43,8 @@
         "description":"Sam Welsh enjoys a varied career as a performer, educator, and chamber musician",
         "noOfStudent": "100",
         "fees": "25",
-        "classNo":"2"
+        "classNo":"2",
+        "email": "sam@gmail.com"
 
     },
     {
@@ -56,7 +59,8 @@
         "description":"Cather Sh enjoys a varied career as a performer, educator, and chamber musician",
         "noOfStudent": "150",
         "fees": "15",
-        "classNo":"2"
+        "classNo":"2",
+        "email": "cather@gmail.com"
 
     },
     {
@@ -70,7 +74,8 @@
         "description":"Cether Sh enjoys a varied career as a performer, educator, and chamber musician",
         "noOfStudent": "130",
         "fees": "12",
-        "classNo":"5"
+        "classNo":"5",
+        "email": "cether@gmail.com"
 
     },
     {
@@ -85,7 +90,8 @@
         "description":"Chloe Sch enjoys a varied career as a performer, educator, and chamber musician",
         "noOfStudent": "300",
         "fees": "12",
-        "classNo":"2"
+        "classNo":"2",
+        "email": "chloe@gmail.com"
 
     },
     {
@@ -100,7 +106,8 @@
         "description":"Erik Corr enjoys a varied career as a performer, educator, and chamber musician",
         "noOfStudent": "220",
         "fees": "18",
-        "classNo":"3"
+        "classNo":"3",
+        "email": "erik@gmail.com"
 
     },
     {
@@ -115,7 +122,8 @@
         "description":"Sarah Bro enjoys a varied career as a performer, educator, and chamber musician",
         "noOfStudent": "140",
         "fees": "28",
-        "classNo":"2"
+        "classNo":"2",
+        "email": "sarah@gmail.com"
 
     },
     {
@@ -129,7 +137,8 @@
         "instrumentName": "Violin",
         "noOfStudent": "100",
         "fees": "14",
-        "classNo":"3"
+        "classNo":"3",
+        "email": "su@gmail.com"
 
     }
 ]

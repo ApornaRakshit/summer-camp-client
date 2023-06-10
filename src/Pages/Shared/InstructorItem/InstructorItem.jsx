@@ -1,9 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+
+
 
 const InstructorItem = ({item}) => {
-    const {instrumentName, name, insImage,description, classNo,}= item
+    const {instrumentName, name, insImage,description, classNo,email}= item
     return (
+        <>
         <section>
             <div className='mx-auto px-24 gap-3 justify-center items-center text-center'>
             <img className='w-[100px] h-[100px] mx-auto' src={insImage} alt="" />
@@ -14,10 +16,11 @@ const InstructorItem = ({item}) => {
             <div>
                 <p>{description}</p>
                 <p>No of Classes: {classNo} Per week</p>
-                <button className="btn btn-active btn-link"><Link to="/see-classes">See Classes</Link></button>
+                <a href="" className='me-2'>{email}</a>
             </div>
         </div>
         </section>
+        </>
     );
 };
 

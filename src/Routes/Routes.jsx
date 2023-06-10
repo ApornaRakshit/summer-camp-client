@@ -5,12 +5,12 @@ import {
 import Main from "../Layout/Main";
 import Home from "../Pages/Home/Home/Home";
 import Instructors from "../Pages/Instructors/Instructors/Instructors";
-import SeeClasses from "../Pages/Home/SeeClasses/SeeClasses";
 import Classes from "../Pages/Classes/Classes/Classes";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import PrivateRoutes from "./PrivateRoutes";
 import Secret from "../Pages/Shared/Secret/Secret";
+import InsBio from "../Pages/Instructors/InsBio/InsBio";
 
   export const router = createBrowserRouter([
     {
@@ -26,8 +26,8 @@ import Secret from "../Pages/Shared/Secret/Secret";
           element: <Instructors></Instructors>
         },
         {
-          path: 'see-classes',
-          element: <SeeClasses></SeeClasses>
+          path: 'item1',
+          element:<InsBio></InsBio>
         },
         {
           path: 'classes',
