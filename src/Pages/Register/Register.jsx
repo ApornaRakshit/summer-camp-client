@@ -7,21 +7,18 @@ import Swal from 'sweetalert2';
 
 const Register = () => {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
-
-    const { createUser ,updateUserProfile } = useContext(AuthContext)
+    const { createUser, updateUserProfile } = useContext(AuthContext)
     const navigate = useNavigate();
-
     const onSubmit = data => {
         console.log(data);
         createUser(data.email, data.password)
             .then(result => {
                 const loggedUser = result.user;
                 console.log(loggedUser)
-                updateUserProfile(data.name,data.photoURL)
-                .then(()=>{
-                    console.log("user profile info is updated")
-                })
-                
+                updateUserProfile(data.name, data.photoURL)
+                    .then(() => {
+                        console.log("user profile info is updated")
+                    })
                 reset();
                 Swal.fire({
                     position: 'top-end',
@@ -29,9 +26,9 @@ const Register = () => {
                     title: 'user created successfully',
                     showConfirmButton: false,
                     timer: 1500
-                  });
-                  navigate('/')
-                  .catch(error=> console.log)
+                });
+                navigate('/')
+                    .catch(error => console.log)
             })
     }
 
@@ -48,7 +45,6 @@ const Register = () => {
                     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                         <form onSubmit={handleSubmit(onSubmit)} className="card-body">
                             <div className="form-control">
-
                                 <label className="label">
                                     <span className="label-text">Name*</span>
                                 </label>
@@ -63,7 +59,6 @@ const Register = () => {
                                 {errors.photoURL && <span className='text-red-600'>Photo URL is required</span>}
                             </div>
                             <div className="form-control">
-
                                 <label className="label">
                                     <span className="label-text">Email*</span>
                                 </label>
@@ -84,8 +79,6 @@ const Register = () => {
                                 {errors.password?.type === 'required' && <p className='text-red-600'>Password is required</p>}
                                 {errors.password?.type === 'minLength' && <p className='text-red-600'>Password must be 6 characters</p>}
                                 {errors.password?.type === 'maxLength' && <p className='text-red-600'>Password must be less than 20 characters</p>}
-
-
                                 <label className="label">
                                     <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                                 </label>
@@ -94,7 +87,6 @@ const Register = () => {
                             {errors.password?.type === 'required' && <p className='text-red-600'>Confirm Password</p>}
                             <div className="form-control mt-6">
                                 <input className='btn btn-primary' type="Submit" />
-
                             </div>
                         </form >
                         <p className='text-center pb-3'><small className='text-blue-500 pb-3'>Already have an account!<Link to="/login">Login</Link></small></p>

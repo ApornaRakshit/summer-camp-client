@@ -3,7 +3,6 @@ import { Helmet } from 'react-helmet-async';
 import ClassItem from '../../Shared/ClassItem/ClassItem';
 import useClass from '../../../hooks/useClass';
 import SectionTitle from '../../../Components/SectionTitle/SectionTitle';
-import { Link } from 'react-router-dom';
 
 const Classes = () => {
     const [classes] = useClass();
@@ -27,8 +26,6 @@ const Classes = () => {
                         ></ClassItem>)
                     }
                 </div>
-                 
-                <button className="btn btn-active btn-link items-center justify-center"><Link to="">Course Select</Link></button>
             </section>
         </div>
     );

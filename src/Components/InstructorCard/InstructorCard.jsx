@@ -14,7 +14,6 @@ const InstructorCard = ({ item }) => {
                 <p>{description}</p>
                 <p>{classNo}</p>
                 <p>{email}</p>
-
             </div>
         </div>
     );
