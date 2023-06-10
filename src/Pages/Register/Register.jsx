@@ -90,6 +90,8 @@ const Register = () => {
                                     <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                                 </label>
                             </div>
+                            <input type="password" placeholder="confirm password" className="input input-bordered" />
+                            {errors.password?.type === 'required' && <p className='text-red-600'>Confirm Password</p>}
                             <div className="form-control mt-6">
                                 <input className='btn btn-primary' type="Submit" />
 

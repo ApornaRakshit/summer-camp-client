@@ -1,7 +1,5 @@
 import React from 'react';
 
-
-
 const InstructorItem = ({item}) => {
     const {instrumentName, name, insImage,description, classNo,email}= item
     return (
