@@ -22,17 +22,12 @@ const Dashboard = () => {
                     <li><NavLink to="/dashboard/history"><FaWallet></FaWallet>Payment History</NavLink></li>
                     <li>
                         <NavLink to="/dashboard/mycart"><FaShoppingCart></FaShoppingCart>My Cart
-                            
-                                Inbox
-                                <span className="badge badge-secondary">+{cart?.length || 0}
-                </span>
-
+                            <span className="badge badge-secondary">+{cart?.length || 0}
+                            </span>
                         </NavLink>
                     </li>
                     <div className="flex flex-col w-full border-opacity-50">
-
                         <div className="divider"></div>
-
                     </div>
                     <li><NavLink to="/"><FaHome></FaHome>Home</NavLink></li>
                     <li><NavLink to="/instructor"><FaChalkboardTeacher></FaChalkboardTeacher>Instructors</NavLink></li>
