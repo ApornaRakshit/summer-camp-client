@@ -3,6 +3,7 @@ import { AuthContext } from '../../providers/AuthProvider';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import Swal from 'sweetalert2';
+import SocialLogin from '../Shared/SocialLogin/SocialLogin';
 
 
 const Login = () => {
@@ -71,6 +72,7 @@ const from = location.state?.from?.pathname || "/";
                             </div>
                         </form>
                         <p className='mx-auto py-2'><small>Don't have any account!<Link to="/register" className='text-blue-500'>Please,register!</Link></small></p>
+                        <SocialLogin></SocialLogin>
                     </div>
                 </div>
             </div>
