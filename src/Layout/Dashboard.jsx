@@ -1,10 +1,15 @@
 import React from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
-import { FaCalendar, FaHome, FaShoppingCart, FaWallet, FaUniversity, FaChalkboardTeacher } from 'react-icons/fa';
+import { FaHome, FaShoppingCart, FaWallet, FaUniversity, FaChalkboardTeacher, FaBook, FaUsers, FaCalendarAlt, FaUtensils } from 'react-icons/fa';
 import useCart from '../hooks/useCart';
+import useAdmin from '../hooks/useAdmin';
 
 const Dashboard = () => {
     const [cart] = useCart()
+
+    //const isAdmin = true;
+    const [isAdmin] = useAdmin()
+
     return (
         <div className="drawer lg:drawer-open">
             <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
@@ -17,15 +22,26 @@ const Dashboard = () => {
                 <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
                 <ul className="menu p-4 w-80 h-full  text-base-content">
                     {/* Sidebar content here */}
-                    <li><NavLink to="/dashboard/home"><FaHome></FaHome>User Home</NavLink></li>
-                    <li><NavLink to="/dashboard/reservation"><FaCalendar></FaCalendar>Reservation</NavLink></li>
-                    <li><NavLink to="/dashboard/history"><FaWallet></FaWallet>Payment History</NavLink></li>
-                    <li>
-                        <NavLink to="/dashboard/mycart"><FaShoppingCart></FaShoppingCart>My Cart
-                            <span className="badge badge-secondary">+{cart?.length || 0}
-                            </span>
-                        </NavLink>
-                    </li>
+                    {
+                        isAdmin ? <>
+                            <li><NavLink to="/dashboard/home"><FaHome></FaHome> Admin Home</NavLink></li>
+                            <li><NavLink to="/dashboard/reservations"> <FaUtensils></FaUtensils> Add Items</NavLink></li>
+                            <li><NavLink to="/dashboard/history"><FaWallet></FaWallet> Manage Items</NavLink></li>
+                            <li><NavLink to="/dashboard/history"><FaBook></FaBook> Manage Bookings</NavLink></li>
+                            <li><NavLink to="/dashboard/allusers"><FaUsers></FaUsers> All Users</NavLink></li>
+
+                        </> : <>
+                            <li><NavLink to="/dashboard/home"><FaHome></FaHome> User Home</NavLink></li>
+                            <li><NavLink to="/dashboard/reservations"><FaCalendarAlt></FaCalendarAlt> Reservations</NavLink></li>
+                            <li><NavLink to="/dashboard/history"><FaWallet></FaWallet> Payment History</NavLink></li>
+                            <li>
+                                <NavLink to="/dashboard/mycart"><FaShoppingCart></FaShoppingCart> My Cart
+                                    <span className="badge inl badge-secondary">+{cart?.length || 0}</span>
+                                </NavLink>
+
+                            </li>
+                        </>
+                    }
                     <div className="flex flex-col w-full border-opacity-50">
                         <div className="divider"></div>
                     </div>
@@ -39,3 +55,7 @@ const Dashboard = () => {
 };
 
 export default Dashboard;
+
+
+
+
