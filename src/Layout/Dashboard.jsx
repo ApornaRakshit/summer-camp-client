@@ -26,7 +26,7 @@ const Dashboard = () => {
                         isAdmin ? <>
                             <li><NavLink to="/dashboard/home"><FaHome></FaHome> Admin Home</NavLink></li>
                             <li><NavLink to="/dashboard/addCourse"> <FaMusic></FaMusic> Add a Course</NavLink></li>
-                            <li><NavLink to="/dashboard/manageusers"><FaWallet></FaWallet> Manage Users</NavLink></li>
+                            <li><NavLink to="/dashboard/manageUsers"><FaWallet></FaWallet> Manage Users</NavLink></li>
                             <li><NavLink to="/dashboard/history"><FaBook></FaBook> Manage Bookings</NavLink></li>
                             <li><NavLink to="/dashboard/allusers"><FaUsers></FaUsers> All Users</NavLink></li>
 
@@ -47,7 +47,7 @@ const Dashboard = () => {
                     </div>
                     <li><NavLink to="/"><FaHome></FaHome>Home</NavLink></li>
                     <li><NavLink to="/instructor"><FaChalkboardTeacher></FaChalkboardTeacher>Instructors</NavLink></li>
-                    <li><NavLink to="/classes"><FaUniversity></FaUniversity>Classes</NavLink></li>
+                    <li><NavLink to="/class"><FaUniversity></FaUniversity>Classes</NavLink></li>
                 </ul>
             </div>
         </div>

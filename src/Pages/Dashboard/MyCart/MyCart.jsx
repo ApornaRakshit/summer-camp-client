@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import useCart from '../../../hooks/useCart';
 import { FaTrashAlt } from 'react-icons/fa';
 import Swal from 'sweetalert2';
+import SectionTitle from '../../../Components/SectionTitle/SectionTitle';
 
 const MyCart = () => {
     const [cart, refetch] = useCart();
@@ -46,6 +47,7 @@ const MyCart = () => {
             <Helmet>
                 <title>Summer Camp | My Cart</title>
             </Helmet>
+            <SectionTitle heading="My cart"></SectionTitle>
             <div className="uppercase font-semibold h-[60px] items-center flex justify-evenly">
                 <h3>Total Items: {cart.length}</h3>
                 <h3>Total Price: ${total}</h3>
@@ -72,7 +74,6 @@ const MyCart = () => {
                                         {index + 1}
                                     </td>
                                     <td>
-
                                         <div className="avatar">
                                             <div className="mask mask-squircle w-12 h-12">
                                                 <img src={item.image} />

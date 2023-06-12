@@ -7,30 +7,7 @@ import useAxiosSecure from '../../../hooks/useAxiosSecure';
 
 const ManageStudent = () => {
     const [classes, refetch] = useClass();
-    const [axiosSecure] = useAxiosSecure()
-
-
-///TO DO:______________________________
-    const handleMakeAdmin = user =>{
-        fetch(`http://localhost:5000/users/admin/${user._id}`,{
-            method:'PATCH'
-        })
-        .then(res=>res.json())
-        .then(data=>{
-            console.log(data)
-            if(data.modifiedCount){
-                refetch()
-                Swal.fire({
-                    position: 'top-end',
-                    icon: 'success',
-                    title: `${user.name}is an Admin now!`,
-                    showConfirmButton: false,
-                    timer: 1500
-                  })
-            }
-        })
-    }
-////________________________________________
+    const [axiosSecure]= useAxiosSecure()
 
 
     const handleDelete = item =>{
@@ -45,16 +22,10 @@ const ManageStudent = () => {
           }).then((result) => {
             if (result.isConfirmed) {
               
-              axiosSecure.delete(`/menu/${item._id}`)
+              axiosSecure.delete(`/classes/${item._id}`)
               .then(res=>{
                 console.log('Deleted response',res.data);
-                if(res.data.deletedCount > 0){
-                    Swal.fire(
-                        'Deleted!',
-                        'Your file has been deleted.',
-                         'success'
-                       )
-                }
+               
                 refetch()
               })
 
@@ -99,9 +70,10 @@ const ManageStudent = () => {
                                 <td>
                                     {item.instrumentName}
                                 </td>
-                                <td className=''>${item.fees}</td>
+                                <div><td>{item.category1}</td></div>
+                                <div><td>${item.fees}</td></div>
                                 <td>
-                                <button onClick={() => handleMakeAdmin(user)} className="btn btn-ghost bg-red-500 text-white"><FaUserShield></FaUserShield></button>
+                                <button onClick={() => handleMakeAdmin(user)} className="btn btn-ghost bg-green-500 text-white"><FaUserShield></FaUserShield></button>
                                 </td>
                                 <td>
                                 <button onClick={() => handleDelete(item)} className="btn btn-ghost bg-red-500 text-white"><FaTrashAlt></FaTrashAlt></button>

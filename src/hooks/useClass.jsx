@@ -1,6 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
 
-
 const useClass = () => {
     //const [classes,setClasses] = useState([]);
     //const [loading, setLoading] = useState(true) 
