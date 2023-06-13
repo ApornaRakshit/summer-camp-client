@@ -35,7 +35,7 @@ export const router = createBrowserRouter([
         element: <InsBio></InsBio>
       },
       {
-        path: 'classes',
+        path: 'class',
         element: <Classes></Classes>
       },
       {
