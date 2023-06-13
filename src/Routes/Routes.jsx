@@ -15,6 +15,7 @@ import AddCourse from "../Pages/Dashboard/AddCourse/AddCourse";
 import AdminRoutes from "./AdminRoutes";
 import ManageStudent from "../Pages/Dashboard/ManageStudents/ManageStudent";
 import Payment from "../Pages/Dashboard/Payment/PAyment";
+import NotFound from "../Pages/NotFound/NotFound";
 
 export const router = createBrowserRouter([
   {
@@ -48,6 +49,10 @@ export const router = createBrowserRouter([
       {
         path: 'secret',
         element: <PrivateRoutes><Secret></Secret></PrivateRoutes>
+      },
+      {
+        path:'notFound',
+        element:<NotFound></NotFound>
       }
     ]
   },
