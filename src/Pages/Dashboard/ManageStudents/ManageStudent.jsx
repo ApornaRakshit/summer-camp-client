@@ -22,10 +22,9 @@ const ManageStudent = () => {
           }).then((result) => {
             if (result.isConfirmed) {
               
-              axiosSecure.delete(`/classes/${item._id}`)
+              axiosSecure.delete(`/class/${item._id}`)
               .then(res=>{
                 console.log('Deleted response',res.data);
-               
                 refetch()
               })
 

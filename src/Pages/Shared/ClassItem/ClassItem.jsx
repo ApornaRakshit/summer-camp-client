@@ -16,7 +16,7 @@ const ClassItem = ({ item }) => {
     const handleAddToCart = item => {
         console.log(item)
         if (user && user.email) {
-            const cartItem = {classId: _id,name,instrumentName,fees,email: user.email, image, category2}
+            const cartItem = {classId: _id,name,instrumentName,fees: parseFloat(fees),email: user.email, image, category2}
             fetch('http://localhost:5000/carts',{
                 method: 'POST',
                 headers:{

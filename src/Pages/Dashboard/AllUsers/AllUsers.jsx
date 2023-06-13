@@ -33,9 +33,7 @@ const AllUsers = () => {
     }
 
     const handleDelete = user => {
-
     }
-
 
 
     return (
@@ -74,8 +72,6 @@ const AllUsers = () => {
                                 </td>
                             </tr>)
                         }
-                        {/* row 1 */}
-
                     </tbody>
                 </table>
             </div>

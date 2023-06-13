@@ -4,15 +4,15 @@ import useCart from '../../../hooks/useCart';
 import { FaTrashAlt } from 'react-icons/fa';
 import Swal from 'sweetalert2';
 import SectionTitle from '../../../Components/SectionTitle/SectionTitle';
+import { Link } from 'react-router-dom';
 
 const MyCart = () => {
     const [cart, refetch] = useCart();
     console.log(cart);
 
-    ////////////////////How does reduce work
-
-
-    const total = cart.reduce((sum, item) => item.fees + sum, 0)
+    const total = cart.reduce((sum, item) => item.fees + sum , 0)
+    const fees = parseFloat(total).toFixed(2)
+   
     const handleDelete = item => {
         Swal.fire({
             title: 'Are you sure?',
@@ -50,8 +50,8 @@ const MyCart = () => {
             <SectionTitle heading="My cart"></SectionTitle>
             <div className="uppercase font-semibold h-[60px] items-center flex justify-evenly">
                 <h3>Total Items: {cart.length}</h3>
-                <h3>Total Price: ${total}</h3>
-                <button className="btn btn-warning btn-sm">Pay</button>
+                <h3>Total Price: ${fees}</h3>
+<Link to="/dashboard/payment">Pay</Link>
             </div>
             <div className="overflow-x-auto">
                 <table className="table">
